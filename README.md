@@ -81,10 +81,34 @@ By default, FastAPI provides an interactive API documentation at:
 🔗 **Swagger UI** → [http://0.0.0.0:8000/docs](http://0.0.0.0:8000/docs)  
 🔗 **ReDoc** → [http://0.0.0.0:8000/redoc](http://0.0.0.0:8000/redoc)  
 
+### 🛠 **Testing the API**  
+
+Once your container is running, you can test the API directly from your terminal using `curl`.  
+
+### 🔹 **Linux/macOS**  
+Run the following command in your terminal:  
+
+```sh
+curl -X 'POST' \
+  'http://0.0.0.0:8000/grades' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "mustermann@student.dhbw-mannheim.de",
+  "password": "password"
+}'
+```
+
+### 🔹 **Windows (PowerShell)**  
+For Windows, use the equivalent `Invoke-RestMethod` command:  
+
+```powershell
+Invoke-RestMethod -Uri "http://0.0.0.0:8000/grades" -Method Post -Headers @{ "accept"="application/json"; "Content-Type"="application/json" } -Body '{ "username": "mustermann@student.dhbw-mannheim.de", "password": "password" }'
+```
 
 ---
 
-## ⚙️ **Setup Instructions (for own further development)**
+## ⚙️ **Setup Instructions (only needed for further development)**
 
 - **Python** (3.x recommended)
 
@@ -130,3 +154,28 @@ Your API should now be running! 🎉
 By default, FastAPI provides an interactive API documentation at:  
 🔗 **Swagger UI** → [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)  
 🔗 **ReDoc** → [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)  
+
+### 🛠 **Testing the API**  
+
+Once your container is running, you can test the API directly from your terminal using `curl`.  
+
+### 🔹 **Linux/macOS**  
+Run the following command in your terminal:  
+
+```sh
+curl -X 'POST' \
+  'http://127.0.0.1:8000/grades' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "mustermann@student.dhbw-mannheim.de",
+  "password": "password"
+}'
+```
+
+### 🔹 **Windows (PowerShell)**  
+For Windows, use the equivalent `Invoke-RestMethod` command:  
+
+```powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/grades" -Method Post -Headers @{ "accept"="application/json"; "Content-Type"="application/json" } -Body '{ "username": "mustermann@student.dhbw-mannheim.de", "password": "password" }'
+```
