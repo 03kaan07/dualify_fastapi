@@ -50,8 +50,8 @@ docker --version
 
 ### 🔹 **1. Clone the Repository**
 ```sh
-git clone git@github.com:03kaan07/dualify_api.git
-cd dualify_api
+git clone git@github.com:03kaan07/dualify_fastapi.git
+cd dualify_fastapi
 ```
 ### 🔹 **2. Create Image and build Container**
 Now ensure your docker-daemon is running and run this command in your terminal:
@@ -120,11 +120,11 @@ python3 --version
 
 ### 🔹 **1. Clone the Repository**
 ```sh
-git clone git@github.com:03kaan07/dualify_api.git
-cd dualify_api
+git clone git@github.com:03kaan07/dualify_fastapi.git
+cd dualify_fastapi
 ```
 ### 🔹 **2. Create a Virtual Environment**
-It’s recommended to use a virtual environment to manage dependencies.
+It’s recommended to use a virtual environment in the projects root directory to manage dependencies.
 
 #### **On macOS/Linux:**
 ```sh
