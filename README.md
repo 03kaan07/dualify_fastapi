@@ -31,7 +31,7 @@ If not, follow the installation steps below.
 sudo docker run hello-world
 ```
 
-#### **Linux**  
+#### **Linux (Ubuntu)**  
 Run the following commands in your terminal:  
 ```bash (ubuntu)
 # Update package list
@@ -110,7 +110,7 @@ Invoke-RestMethod -Uri "http://0.0.0.0:8000/grades" -Method Post -Headers @{ "ac
 
 ---
 
-## ⚙️ **(MacOS for now)Setup Instructions (only needed for further development)**
+## ⚙️ **(Unix for now) Setup Instructions (only needed for further development)**
 
 - **Python** (3.x recommended)
 
