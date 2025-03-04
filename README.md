@@ -28,7 +28,7 @@ If not, follow the installation steps below.
 2. Follow the setup instructions and start **Docker Desktop**.  
 3. Verify installation:  
 ```sh
-docker run hello-world
+sudo docker run hello-world
 ```
 
 #### **Linux**  
@@ -55,25 +55,27 @@ cd dualify_fastapi
 ```
 ### 🔹 **2. Create Image and build Container**
 Now ensure your docker-daemon is running and run this command in your terminal:
+
+`Build the Docker image`
 ```sh
-# Build the Docker image
-docker build -t fastapi-backend .
+sudo docker build -t fastapi-backend .
 ```
+`Run the container in detached mode (-d) and expose port 8000`
 ```sh
-# Run the container in detached mode (-d) and expose port 8000
-docker run -d -p 8000:8000 --name fastapi-container fastapi-backend
+sudo docker run -d -p 8000:8000 --name fastapi-container fastapi-backend
 ```
 ### 🚀 Running the API
 
 Once everything is set up, start or stop the FastAPI server by running:
 
+`Start the container
+`
 ```sh
-# Start the container
-docker start fastapi-container
+sudo docker start fastapi-container
 ```
+`Stop the container`
 ```sh
-# Stop the container
-docker stop fastapi-container
+sudo docker stop fastapi-container
 ```
 Your API should now be running! 🎉  
 
@@ -128,6 +130,9 @@ It’s recommended to use a virtual environment in the projects root directory t
 
 #### **On macOS/Linux:**
 ```sh
+# Install python3.12-venv if your system is debian/ubuntu based
+sudo apt install python3.12-venv
+---
 python3 -m venv .venv
 source .venv/bin/activate
 ```
