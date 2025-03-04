@@ -1,0 +1,62 @@
+# Temporary files while executing
+cookie
+header
+page.html
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+.ENV/
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and Database
+logs/
+*.log
+*.sqlite3
+*.db
+*.db-journal
+
+# Pip Dependency Files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest & Coverage Reports
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Editor & IDE Config
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Python Package Management
+dist/
+build/
+*.egg-info/
+*.egg
+
+# FastAPI Specific
+instance/
+*.env
+.envrc
+.env.local
+.env.production
+.env.development
+.env.test
+secrets.json
