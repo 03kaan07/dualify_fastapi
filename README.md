@@ -108,7 +108,7 @@ Invoke-RestMethod -Uri "http://0.0.0.0:8000/grades" -Method Post -Headers @{ "ac
 
 ---
 
-## ⚙️ **Setup Instructions (only needed for further development)**
+## ⚙️ **(MacOS for now)Setup Instructions (only needed for further development)**
 
 - **Python** (3.x recommended)
 
