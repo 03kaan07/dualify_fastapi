@@ -19,7 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-### Attribution
-
-This project includes portions of code adapted from work by **neinkob15**, used under the terms of the MIT License. The original work by neinkob15 can be found [here](https://github.com/neinkob15/Dualis-API).
